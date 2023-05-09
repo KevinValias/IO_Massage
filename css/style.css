@@ -232,8 +232,9 @@ color:#ffdb15
       padding: 20px;
 }
 .logo_img {
+  
   flex-direction: column;
-  height:35%;
+  height:40%;
   width:100%;
       
 }
