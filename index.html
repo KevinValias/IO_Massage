@@ -21,11 +21,11 @@
         <div class="column">
       <div class="column-2 bg-primary">
         <h4 class="btn-outline btn-outline-content"><a href="about.html">About Us</a></h4>
-        <h4 class="btn-outline btn-outline-content">Modalities</h4>
-        <h4 class="btn-outline btn-outline-content">Services</h4>
-        <h4 class="btn-outline btn-outline-content">Philosophy</h4>
-        <h4 class="btn-outline btn-outline-content">What To Expect</h4>
-        <h4 class="btn-outline btn-outline-content">Contact</h4>
+        <h4 class="btn-outline btn-outline-content"><a href="#modalities">Modalities</a></h4>
+        <h4 class="btn-outline btn-outline-content"><a href="#services">Services</a></h4>
+        <h4 class="btn-outline btn-outline-content"><a href="#philosophy">Philosophy</a></h4>
+        <h4 class="btn-outline btn-outline-content"><a href="#expectation">What To Expect</a></h4>
+        <h4 class="btn-outline btn-outline-content"><a href="contact">Contact</a></h4>
         
       
       </div>
@@ -46,7 +46,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>  -->
     </div>
-<div class="content">
+<div class="content"  id="services">
     <!-- <img class="logo_img"> -->
 
   <h1>Austin Premier Structural Massage Therapist</h1>
@@ -56,7 +56,7 @@
   </header> 
   
   <main>
-    <div class="expectation">
+    <div class="expectation" id="expectation">
 <h1 class="expectation-header">What to expect</h1>
 <div class="expectation-div">
   <img class="expectation-img" src="images/expectation.png" alt="">
@@ -260,6 +260,8 @@
   crossorigin="anonymous"></script>
   
   <script src="js/lightbox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   
   <script>
   const navbar = document.getElementById('navbar');
@@ -279,6 +281,37 @@ window.onscroll = function() {
   scrolled = false;
   }
 };
+
+// smooth scroll to sections // 
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
 
 
 
