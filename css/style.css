@@ -273,7 +273,25 @@ img {
     padding: 20px;
   }
 
-  .column-2 {
+  .flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+    margin: auto;
+    /* padding-bottom: 40px; */
+    /* height: 100%; */
+  }
+  div .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 100px; */
+  }
+
+  /* .column-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,7 +299,7 @@ img {
     text-align: center;
     height: 100%;
     padding: 100px 20px;
-  }
+  } */
   .btn-outline .btn {
     background: black;
     color: white;
