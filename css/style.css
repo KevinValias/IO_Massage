@@ -279,11 +279,14 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* padding: 20px; */
-    margin-bottom: 30px;
-    /* padding-bottom: 40px; */
-    /* height: 100%; */
+    padding: 50px;
   }
+  .column-2 {
+    background: url("../images/Theteam.png") no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+  }
+
   div .column {
     display: flex;
     flex-direction: column;
@@ -308,7 +311,7 @@ img {
     margin: 3px;
   }
   .column-2 h4 {
-    font-size: 15px;
+    font-size: 12px;
   }
   .btn-outline-content {
     text-align: center;
