@@ -277,6 +277,9 @@ p {
   .logo {
     visibility: hidden;
   }
+  p {
+    padding: 0;
+  }
 
   .column-2 {
     display: flex;
