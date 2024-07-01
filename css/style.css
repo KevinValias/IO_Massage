@@ -224,6 +224,20 @@ img {
   margin: 10px;
   font-size: 100px;
 }
+.expectation-icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.icon-one {
+  background-color: #ffdb15;
+  color: black;
+}
+.icon-three {
+  background-color: #ffdb15;
+  color: black;
+}
 .expectation-content {
   display: flex;
   align-items: center;
