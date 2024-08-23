@@ -259,6 +259,9 @@ img {
   padding: 75px;
   text-align: start;
 }
+.column-2 h3 {
+  color: white;
+}
 
 /* Footer */
 .footer {
@@ -299,7 +302,7 @@ img {
     padding: 50px;
   }
   .column-3 {
-    background: url("../images/phone.jpg") no-repeat center center/cover;
+    /* background: url("../images/phone.jpg") no-repeat center center/cover; */
     height: 80vh;
     position: relative;
   }
@@ -320,6 +323,9 @@ img {
   }
   .column-2 h4 {
     font-size: 15px;
+  }
+  .column-2 h3 {
+    color: black;
   }
   .btn-outline-content {
     text-align: center;
@@ -356,7 +362,12 @@ img {
   .contact h2 {
     color: black;
   }
-
+  .column h2 {
+    color: white;
+  }
+  .column h3 {
+    color: white;
+  }
   .logo_img {
     flex-direction: column;
     height: 40%;
